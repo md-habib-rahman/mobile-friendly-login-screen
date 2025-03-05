@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Document</title>
 </head>
-<body>
-	
+
+<body class="bg-slate-900">
+	<main class="w-4/6 lg:w-2/6 mx-auto bg-slate-300 h-screen pt-4 px-4">
+		<nav class="flex items-center justify-between">
+			<div class="flex items-center justify-center">
+				<div>
+					<img src="./assets/Group.png" alt="">
+				</div>
+				<div>
+					<h2 class="text-3xl font-bold">$4500</h2>
+					<p class="border px-1 rounded-md">Available Balance</p>
+				</div>
+			</div>
+			<div>
+				<button id="btn-logout" class="btn">Log Out <i class="fa-solid fa-right-from-bracket"></i></button>
+			</div>
+
+		</nav>
+		<section class="mt-16 space-y-4">
+			<h1 class="text-3xl font-bold">🔥Welcome to Banking!</h1>
+			<p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low.</p>
+		</section>
+		<section class="px-4 mt-8">
+			<div class="cards grid grid-cols-3 gap-2">
+				<div class="box border rounded-lg p-3 text-center">
+					<img class="mx-auto" src="./assets/wallet1.png" alt="">
+					<h4>Add Money</h4>
+				</div>
+				<div class="box border rounded-lg p-3 text-center">
+					<img class="mx-auto" src="./assets/wallet1.png" alt="">
+					<h4>Add Money</h4>
+				</div>
+				<div class="box border rounded-lg p-3 text-center">
+					<img class="mx-auto" src="./assets/wallet1.png" alt="">
+					<h4>Add Money</h4>
+				</div>
+				<div class="box border rounded-lg p-3 text-center">
+					<img class="mx-auto" src="./assets/wallet1.png" alt="">
+					<h4>Add Money</h4>
+				</div>
+				<div class="box border rounded-lg p-3 text-center">
+					<img class="mx-auto" src="./assets/wallet1.png" alt="">
+					<h4>Add Money</h4>
+				</div>
+				<div class="box border rounded-lg p-3 text-center">
+					<img class="mx-auto" src="./assets/wallet1.png" alt="">
+					<h4>Add Money</h4>
+				</div>
+			</div>
+		</section>
+		<section class="px-4 mt-8">
+			<h3 class="text-xl font-bold mb-4">Add Money</h3>
+			<div class="card bg-base-50 w-full max-w-sm shrink-0 shadow-2xl">
+				<form class="card-body">
+					<div class="form-control">
+						<fieldset class="fieldset">
+							<legend class="fieldset-legend">Select a Source Fund</legend>
+							<select class="select">
+							  <option disabled selected>Select a Bank</option>
+							  <option>Brac Bank</option>
+							  <option>City Bank</option>
+							  <option>Standard Chartered Bank</option>
+							</select>
+							
+						  </fieldset>
+						<label class="label">
+							<span class="label-text">Amount</span>
+						</label>
+						<input id="amount" type="text" placeholder="Amount to add" class="input input-bordered"
+							required />
+							
+							<label class="label">
+							<span class="label-text">Account Number</span>
+						</label>
+						<input id="account-number" type="text" placeholder="account number" class="input input-bordered"
+							required />
+					</div>
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text">PIN</span>
+						</label>
+						<input id="password" type="text" placeholder="password" class="input input-bordered" required />
+						
+					</div>
+					<div class="form-control mt-6">
+						<button id="btn-login" class="btn btn-primary">Add Money</button>
+					</div>
+				</form>
+		</section>
+
+	</main>
+
 </body>
+
 </html>
